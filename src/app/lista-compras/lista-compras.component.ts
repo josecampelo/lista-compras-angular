@@ -25,4 +25,8 @@ export class ListaComprasComponent {
 
     this.input = '';
   }
+
+  limpaLista() {
+    this.listaItens = [];
+  }
 }

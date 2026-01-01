@@ -12,7 +12,7 @@
                             <button class="btn btn-primary" type="submit" [disabled]="!input.trim()">
                                 Adicionar
                             </button>
-                            <button class="btn btn-danger" type="button" [disabled]="listaItens.length == 0">Limpar</button>
+                            <button class="btn btn-danger" (click)="limpaLista()" type="button" [disabled]="listaItens.length == 0">Limpar</button>
                         </div>
                     </form>
 
