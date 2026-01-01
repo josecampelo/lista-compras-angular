@@ -1,1 +1,39 @@
-<p>lista-compras works!</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6"> 
+            <div class="card shadow-sm">
+                <div class="card-body p-4"> 
+                    <h2 class="card-title text-center mb-4">Lista de Compras</h2>
+
+                    <form class="mb-4"> 
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Curso de Angular">
+                            
+                            <button class="btn btn-primary" type="submit">Adicionar</button>
+                            <button class="btn btn-danger" type="button">Limpar</button>
+                        </div>
+                    </form>
+
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col" style="width: 10%">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col" class="text-center" style="width: 15%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Exemplo</td>
+                                <td class="text-center">
+                                    <input class="form-check-input" type="checkbox">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
