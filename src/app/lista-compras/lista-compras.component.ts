@@ -26,6 +26,10 @@ export class ListaComprasComponent {
     this.input = '';
   }
 
+  removeItem(id: number) {
+    this.listaItens = this.listaItens.filter(item => item.id !== id);
+  }
+
   limpaLista() {
     this.listaItens = [];
   }
