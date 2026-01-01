@@ -1,59 +1,52 @@
-# ListaComprasAngular
+# Lista de Compras
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
+Esta é uma aplicação de gerenciamento de itens desenvolvida para consolidar os fundamentos do **Angular 19**. O foco do projeto foi aplicar na prática o controle de estado de listas, manipulação de arrays no TypeScript e a utilização da nova sintaxe de controle de fluxo do Angular.
 
-## Development server
+## Demonstração
 
-To start a local development server, run:
+A aplicação permite adicionar itens com limite de caracteres, marcar itens como comprados (com efeito visual), remover itens individualmente e limpar a lista completa.
 
-```bash
-ng serve
-```
+<p align="center">
+  <img src="assets/demonstracao-lista-compras.gif" alt="Demonstração da Lista de Compras" width="500">
+</p>
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse a aplicação online: [Lista de Compras Angular](https://josecampelo.github.io/lista-compras-angular/).
 
-## Code scaffolding
+## Tecnologias e Ferramentas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Angular 19**: Desenvolvimento utilizando o padrão de *Standalone Components*.
+* **Bootstrap 5**: Estilização de componentes (Cards, Tables, Inputs) e layout responsivo.
+* **Bootstrap Icons**: Utilização de ícones vetoriais para ações de interface.
+* **TypeScript**: Uso de **Interfaces** para modelagem de dados e tipagem forte.
+* **Git & Conventional Commits**: Padronização de mensagens de commit (`feat`, `fix`, `build`).
 
-```bash
-ng generate component component-name
-```
+## Conceitos Praticados
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+* **Interfaces**: Criação de modelos de dados robustos com propriedades obrigatórias e opcionais.
+* **Nova Sintaxe de Controle (`@for` e `@empty`)**: Renderização dinâmica de listas e tratamento de estados vazios.
+* **Two-Way Data Binding (`[(ngModel)]`)**: Sincronização em tempo real de inputs e estados de checkboxes.
+* **Class Binding**: Aplicação dinâmica de classes CSS (ex: riscar texto de itens comprados).
+* **Manipulação de Arrays**: Uso de métodos modernos como `.filter()` para remoção de registros.
+* **Lógica de Identificadores**: Implementação de contador global para garantir IDs únicos e evitar duplicidade.
 
-```bash
-ng generate --help
-```
+## Como rodar o projeto localmente
 
-## Building
+Para executar este projeto em sua máquina, você precisará ter o [Node.js](https://nodejs.org/) e o [Angular CLI](https://angular.io/cli) instalados.
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1.  **Clone este repositório**:
+    ```bash
+    git clone https://github.com/seu-usuario/lista-compras-angular.git
+    ```
+2.  **Acesse a pasta do projeto**:
+    ```bash
+    cd lista-compras-angular
+    ```
+3.  **Instale as dependências**:
+    ```bash
+    npm install
+    ```
+4.  **Inicie o servidor de desenvolvimento**:
+    ```bash
+    ng serve
+    ```
+5.  Abra o seu navegador no endereço: `http://localhost:4200/`.
