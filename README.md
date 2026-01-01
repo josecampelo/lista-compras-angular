@@ -35,7 +35,7 @@ Para executar este projeto em sua máquina, você precisará ter o [Node.js](htt
 
 1.  **Clone este repositório**:
     ```bash
-    git clone https://github.com/seu-usuario/lista-compras-angular.git
+    git clone https://github.com/josecampelo/lista-compras-angular.git
     ```
 2.  **Acesse a pasta do projeto**:
     ```bash
