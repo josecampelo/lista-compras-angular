@@ -11,10 +11,11 @@ import { FormsModule } from '@angular/forms';
 export class ListaComprasComponent {
   listaItens: ItemLista[] = [];
   input: string = '';
+  proximoId: number = 1;
   
   adicionaItem() {
     let item: ItemLista = {
-      id: this.listaItens.length + 1,
+      id: this.proximoId,
       nome: this.input,
       comprado: false
     };
@@ -23,6 +24,7 @@ export class ListaComprasComponent {
       this.listaItens.push(item);
     }
 
+    this.proximoId++;
     this.input = '';
   }
 
@@ -32,5 +34,6 @@ export class ListaComprasComponent {
 
   limpaLista() {
     this.listaItens = [];
+    this.proximoId = 1;
   }
 }
