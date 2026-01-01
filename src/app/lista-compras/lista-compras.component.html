@@ -5,9 +5,9 @@
                 <div class="card-body p-4"> 
                     <h2 class="card-title text-center mb-4">Lista de Compras</h2>
 
-                    <form class="mb-4"> 
+                    <form #frm="ngForm" (ngSubmit)="adicionaItem()" class="mb-4"> 
                         <div class="input-group">
-                            <input class="form-control" type="text" placeholder="Curso de Angular">
+                            <input [(ngModel)]="input" name="input" class="form-control" type="text" placeholder="Curso de Angular">
                             
                             <button class="btn btn-primary" type="submit">Adicionar</button>
                             <button class="btn btn-danger" type="button">Limpar</button>
